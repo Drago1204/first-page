@@ -8,6 +8,9 @@ body {
 
 /* Encabezado */
 header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center; /* Centrar el texto */
   margin-bottom: 40px; /* Agregar espacio debajo del encabezado */
 }
@@ -19,14 +22,13 @@ h1 {
 /* Sección "Acerca de Mí" */
 section {
   padding: 20px;
-  border: 1px solid #ccc; /* Borde sutil */
-  border-radius: 10px; /* Esquinas redondeadas */
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil */
 }
 
 h2 {
   color: #444; /* Color de subtítulo */
   margin-bottom: 15px; /* Agregar espacio debajo del subtítulo */
+  text-align: center; /* Centrar el texto */
+
 }
 
 p {
@@ -66,4 +68,19 @@ footer {
   text-align: center;
   padding: 20px;
   background-color: #eee; /* Color de fondo del pie de página */
+}
+
+.contenido-centrado {
+  display: flex;
+  flex-direction: column; /* Ordenar elementos en columna */
+  align-items: center; /* Alinear horizontalmente al centro */
+  justify-content: center; /* Alinear verticalmente al centro */
+}
+
+/* Imagen redonda */
+.contenido-centrado img {
+  border-radius: 50%; /* Convertir la imagen en un círculo */
+  margin: 0 auto; /* Centrar la imagen horizontalmente */
+  border: 1px solid #000; /* Borde sutil */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil */
 }
